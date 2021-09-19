@@ -4,10 +4,10 @@
 }
 
 .stretch{
-    -webkit-transform:scale(3,1); /* Safari and Chrome */
-    -moz-transform:scale(2,1); /* Firefox */
-    -ms-transform:scale(2,1); /* IE 9 */
-    -o-transform:scale(2,1); /* Opera */
+    -webkit-transform:scale(1.4,1); /* Safari and Chrome */
+    -moz-transform:scale(1.4,1); /* Firefox */
+    -ms-transform:scale(1.4,1); /* IE 9 */
+    -o-transform:scale(1.4,1); /* Opera */
     transform:scale(1.4,1); /* W3C */
 }
 
