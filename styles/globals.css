@@ -1,0 +1,22 @@
+*{
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+.stretch{
+    -webkit-transform:scale(3,1); /* Safari and Chrome */
+    -moz-transform:scale(2,1); /* Firefox */
+    -ms-transform:scale(2,1); /* IE 9 */
+    -o-transform:scale(2,1); /* Opera */
+    transform:scale(1.4,1); /* W3C */
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 100%
+    }
+}
