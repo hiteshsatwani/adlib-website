@@ -6,12 +6,13 @@ function MyApp({ Component, pageProps }: any) {
   return (
     <div>
       <Head>
-        <title>AdLib - Discover New Music </title>
+        <title>AdLib - Discover New Music</title>
         <meta http-equiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
         <meta name='description' content='Description' />
         <meta name='keywords' content='Keywords' />
 
+        <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }: any) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png"/>
         <meta name="theme-color" content="#317EFB" />
 
       </Head>
