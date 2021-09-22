@@ -18,7 +18,23 @@
 }
 
 .bg {
-    background: linear-gradient(180deg, #000000 4.26%, #0E0064 51.94%, #A300DC 93.15%);
+    background: linear-gradient(180deg, #343c52 4.26%, #0E0064 51.94%, #A300DC 93.15%);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: -1; 
+}
+
+.bg2 {
+    background: linear-gradient(180deg, #f10020 4.26%, #f39304 51.94%, #ff0404 93.15%);
+   
+}
+
+.gbg {
+    background: black;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;

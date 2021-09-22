@@ -31,15 +31,10 @@ function MyApp({ Component, pageProps }: any) {
         <meta name="theme-color" content="#317EFB" />
 
       </Head>
-      <div className="bg animate-gradient-y" >
-        <div className="py-10 md:px-10">
-          <NavBar />
+      <div className="gbg animate-gradient-y" >
+        
 
-        </div>
-
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </div>
     </div>
   )

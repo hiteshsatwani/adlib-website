@@ -6,7 +6,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className="md:px-0 content py-10" style={{maxWidth: "1065px"}}>
+        <div className="md:px-0 content px-10">
             {children}
         </div>
     )
