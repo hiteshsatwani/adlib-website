@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import NavBar from './components/Navbar';
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
 import Layout from './components/Layout'
@@ -27,11 +27,16 @@ function MyApp({ Component, pageProps }: any) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" href="/apple-icon.png"/>
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
         <meta name="theme-color" content="#317EFB" />
 
       </Head>
-      <div className=" bg-gradient-to-b from-black to-blue-700 animate-gradient-y" >
+      <div className="bg animate-gradient-y" >
+        <div className="py-10 md:px-10">
+          <NavBar />
+
+        </div>
+
         <Layout>
           <Component {...pageProps} />
         </Layout>

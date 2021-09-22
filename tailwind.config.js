@@ -6,12 +6,14 @@ module.exports = {
     extend: {
       height: {
         nav: '15vh',
-        body: '85vh'
+        body: '70vh',
+        fullh: '100%'
       },
       width: {
         fullw: '100%',
         thrityp: '30%',
-        eightyp: '80%' 
+        eightyp: '80%',
+        fiftyp: '50%'
       },
       'animation': {
         'gradient-x':'gradient-x 15s ease infinite',
