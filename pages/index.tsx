@@ -10,15 +10,14 @@ const music = (wrap = false) => `${wrap ? 'url(' : ''}https://storage.googleapis
 
 const heart = (wrap = false) => `${wrap ? 'url(' : ''}https://storage.googleapis.com/adlib-app-2d2b1.appspot.com/heart.svg${wrap ? ')' : ''}`
 
-
 const stars = (wrap = false) => `${wrap ? 'url(' : ''}https://storage.googleapis.com/adlib-app-2d2b1.appspot.com/stars.svg${wrap ? ')' : ''}`
-
 
 export default function App() {
     const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 1000 })
     const parallax = useRef<IParallax>(null!)
     return (
         <div style={{ width: '100%', height: '100%' }} className="bg-purple-900 animate-gradient-y">
+            
             <Parallax ref={parallax} pages={3}>
                 <ParallaxLayer offset={1} speed={1} className="bg animate-gradient-y" />
                 <ParallaxLayer offset={2} speed={1} className="bg2 animate-gradient-y" />
@@ -30,7 +29,11 @@ export default function App() {
                         backgroundImage: stars(true),
                         backgroundSize: 'cover',
                     }}
-                />
+                >
+                    <div className="py-10 md:px-10 w-screen justify-self-start self-start">
+                        <NavBar />
+                    </div>
+                    </ParallaxLayer>
 
                 {/* <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
                     <img src={url('satellite4')} style={{ width: '15%', marginLeft: '70%' }} />
@@ -68,11 +71,13 @@ export default function App() {
                     offset={0}
                     speed={0.1}
                     onClick={() => parallax.current.scrollTo(1)}
-                >
-                    <div className="py-10 md:px-10 w-screen">
-                        <NavBar />
-                    </div>
-                    <animated.div style={props} className="space-y-3 pt-36 flex-col w-screen text-center">
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}>
+                
+                    
+                    <animated.div style={props} className="space-y-3 flex-col w-screen text-center">
                         <div className="font-bold text-white text-4xl md:text-6xl">
                             Music
                         </div>
