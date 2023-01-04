@@ -13,7 +13,7 @@ const NavBar = () => {
             </div>
             <div className="ml-auto pr-5 pt-3">
                 <a
-                    href="https://play.google.com/store/apps/details?id=fun.adlib"
+                    href="https://expo.dev/@hiteshsatwani/AdLib"
                     className="whitespace-nowrap inline-flex px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-semibold text-black bg-white h-10"
                 > 
                     Download Now

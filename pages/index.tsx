@@ -72,9 +72,9 @@ export default function App() {
                     speed={0.1}
                     onClick={() => parallax.current.scrollTo(1)}
                     style={{
-                        display: 'flex',
-                        alignItems: 'center',
+                        marginTop: 300,
                     }}>
+                    
                 
                     
                     <animated.div style={props} className="space-y-3 flex-col w-screen text-center">
